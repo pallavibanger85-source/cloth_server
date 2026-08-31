@@ -24,7 +24,7 @@ router.post('/reset-password', resetPassword)
 
 // Protected routes
 router.get('/profile', authenticate, getProfile)
-router.put('/profile', authenticate, updateProfile)
+router.put('/profile_update', authenticate, updateProfile)
 
 // Admin routes
 router.get('/admin/users', authenticate, authorize(['admin']), async (req, res) => {

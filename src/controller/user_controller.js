@@ -78,7 +78,7 @@ export const createAccount = async (req, res) => {
             email: user.email
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
 
 // Verify OTP
@@ -140,7 +140,7 @@ export const verifyOTP = async (req, res) => {
         })
 
     } 
-        catch (error) {allError (error,res)}
+        catch (err) {allError (err,res)}
 
 }
 
@@ -190,7 +190,7 @@ export const resendOTP = async (req, res) => {
             email: user.email
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
 
 // Login User
@@ -239,7 +239,7 @@ export const loginUser = async (req, res) => {
             }
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
 
 // Update Profile
@@ -278,7 +278,7 @@ export const updateProfile = async (req, res) => {
             }
         })
 
-    }catch (error) {allError (error,res)}
+    }catch (err) {allError (err,res)}
 }
 
 // Forgot Password - Send OTP
@@ -327,7 +327,7 @@ export const forgotPassword = async (req, res) => {
             email: user.email
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
 
 // Reset Password (After OTP Verification)
@@ -373,7 +373,7 @@ export const resetPassword = async (req, res) => {
             message: 'Password reset successfully'
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
 
 // Get User Profile
@@ -404,5 +404,5 @@ export const getProfile = async (req, res) => {
             }
         })
 
-    } catch (error) {allError (error,res)}
+    } catch (err) {allError (err,res)}
 }
